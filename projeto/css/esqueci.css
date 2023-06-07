@@ -1,0 +1,95 @@
+* {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f4f4f4;
+}
+
+.back{
+	background-color: dodgerblue;
+	height: 40vh;
+	width: 100vw;
+}
+
+.container, .container header, .container form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	width: 30rem;
+	background-color: white;
+	border: 1px solid #80808079;
+	border-radius: 12px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.container header .title{
+	margin-bottom: 10px;
+	font-size: 25px;
+	color: #363636;
+	font-weight: bold;
+}
+
+.container header .texto{
+	padding: 0px 2rem;
+	text-align: center;
+	color: grey;
+}
+
+.container header img{
+	width: 10rem;
+}
+
+.container main{
+	margin-top: 1rem;
+	width: 100%;
+
+}
+
+.container form input{
+	margin: 10px;
+	width: 60%;
+	padding: 10px;
+	border-radius: 7px;
+	border: 1px solid rgba(128, 128, 128, 0.308);
+	outline: none;
+}
+
+.container form input[type="submit"]{
+	cursor: pointer;
+	background-color: transparent;
+	color: green;
+	border: 1px solid green;
+	font-weight: bold;
+}
+
+.container form input[type="submit"]:hover{
+	transition: background 0.5s;
+	background-color: green;
+	color: white;
+}
+
+.container .lembrou a{
+	color: #141414;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+
+@media (max-width: 700px) {
+	.container{
+		width: 20rem;
+	}
+}

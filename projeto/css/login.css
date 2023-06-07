@@ -1,0 +1,105 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background: linear-gradient(45deg,rgb(104,183,236), #0c66c9);
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    background: #ffffffb3;
+    border: 1px solid #80808069;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    width: 50%;
+    height: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.container .right{
+    height: 70%;
+    width: 50%;
+}
+
+.container .right .title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(6, 14, 82);
+}
+
+.container form{
+    padding: 40px;
+}
+
+.container .formulario{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .formulario .col{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+
+.container .formulario input{
+    padding: 10px;
+    border: 1px solid #808080cc;
+    outline: none;
+    border-radius: 7px;
+}
+
+.container .formulario .buttons{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: end;
+}
+
+.container .formulario .buttons button, .container .formulario .buttons input{
+    background-color: #3a82cf;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    margin-left: 10px;
+    padding: 7px;
+}
+
+.container .formulario .buttons button:hover, .container .formulario .buttons input:hover{
+    background-color: #1d5897;
+}
+
+.container .esqueci a{
+    color: black;
+    font-size: 15px;
+}
+
+@media (max-width: 700px) {
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .container .right{
+        width: 100%;
+    }
+}

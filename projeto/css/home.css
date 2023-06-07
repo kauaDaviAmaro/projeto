@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+}
+
+.menu, .menu main, .menu .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu .links{
+    justify-content: space-around;
+    height: 70%;
+}
+
+.menu main{
+    height: 100%;
+    justify-content: space-between;
+}
+
+.menu{
+    font-size: 40px;
+    background-color: dodgerblue;
+    width: 5rem;
+    height: 100vh;
+    padding: 10px;
+}
+
+.menu img{
+    width: 50px;
+}
+
+.menu a{
+    color: lightblue;
+    transition: transform 0.5s;
+}
+
+.menu .active{
+    color: white;
+}
+
+.menu a:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+.conteudo{
+    border-radius: 12px;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.247);
+}
+
+.conteudo .title{
+    text-align: center;
+    margin: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-wrap > .card{
+    margin-top: 15px;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.card-wrap:last-child{
+    border-bottom: none;
+}
+
+.card{
+    justify-content: space-between;
+}
+
+.card h1{
+    font-size: 20px;
+}
+
+.content{
+    margin-left: 20px;
+}
+
+.card .left, .card{
+    display: flex;
+}
+
+.card img{
+    width: 5rem;
+}
+
+.stars{
+    font-size: 20px;
+
+}
+
+.bxs-star{
+    color: rgb(235, 235, 6);
+}
+.card .marca{
+    color: gray;
+}
+.card .right{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.menu-mobile{
+    display: none;
+    background-color: dodgerblue;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.menu-mobile i{
+    font-size: 40px;
+}
+
+.menu-mobile img{
+    width: 3rem;
+}
+
+
+@media (max-width: 700px) {
+    .menu{
+        display: none;
+    }
+    .menu-mobile{
+        display: flex;
+    }
+    .conteudo{
+        width: 90%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+}
